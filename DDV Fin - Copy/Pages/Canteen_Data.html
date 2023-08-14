@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+	
+<head>
+<meta charset="utf-8">
+<title>Fast Food Analysis</title>
+<link rel="stylesheet" href="../CSS and JS/stylesheet.css">
+<link rel="icon" type="image/x-icon" href="../Images/favicon-32x32.png">
+</head>
+	
+<body class="body">
+<table cellpadding="1" cellspacing="0" class="table" border="0">
+  <tbody>
+    <tr>
+      <td class="Tab"><a href="Index.html" class="link">Main Page</a></td>
+      <td class="Tab"><a href="Maccas_Data.html" class="link">McDonalds Data</a></td>
+      <td class="Selected_Tab">Canteen Data </td>
+      <td class="Tab"><a href="Surveys.html" class="link">Surveys and Interviews</a></td>
+      <td class="Tab"><a href="Misc.html" class="link">Miscellaneous</a></td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+	  <tr class="content">
+      <td colspan="3" align="center"><h1>General Canteen Statistics</h1></td>
+    </tr>
+    <tr class="content">
+      <td width="57%" height="138"><img src="../Images/weekylspend_daysperweek_graph.JPG" width="474" height="286" alt=""/></td>
+      <td width="43%"><p>Generally, the more a student visits the canteen in a week, the more they will spend.</p>
+      <p>1-3 days/week shows little veriation, most students spending around $5 a week.</p>
+      <p>5 days shows great variation, probably due to why students are eating canteen food, such as if it is their main source of lunch, or getting just snacks everyday.</p>
+      <p>It is clear that students who go to the canteen for their daily recess and lunch would spend more.</p></td>
+      <td width="0%">&nbsp;</td>
+    </tr>
+    <tr class="content">
+      <td><div style="width: 600px; height: 300px; padding:10px">
+  <canvas id="myChart" height="300px" width="600px"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Food Items'],
+      datasets: [{
+        label: 'Hot Chips',
+        data: [20],
+        borderWidth: 1,
+		backgroundColor:['rgba(254, 255, 74, 0.5)'],
+		borderColor:['rgba(214, 215, 33, 1)']
+      },{
+		label: 'Cookies',
+        data: [3],
+        borderWidth: 1,
+        backgroundColor:['rgba(89, 191, 239, 0.5)'],
+		borderColor:['rgba(73, 153, 191, 1)']
+	  },{
+		label: 'Milk',
+        data: [2],
+        borderWidth: 1,
+		backgroundColor:['rgba(255, 184, 73, 0.5)'],
+		borderColor:['rgba(210, 152, 62, 1)']
+	  },{
+		label: 'Chicken Burger',
+        data: [2],
+        borderWidth: 1,
+		backgroundColor:['rgba(149, 240, 35, 0.5)'],
+		borderColor:['rgba(117, 185, 32, 1)']
+	  },{
+		label: 'Pasta',
+        data: [2],
+        borderWidth: 1,
+		backgroundColor:['rgba(245, 19, 14, 0.5)'],
+		borderColor:['rgba(168, 16, 14, 0.1)']
+	  },{
+		label: 'Mints',
+        data: [1],
+        borderWidth: 1,
+		backgroundColor:['rgba(23, 26, 239, 0.5)'],
+		borderColor:['rgba(17, 19, 146, 1)']
+	  },{
+		label: 'Toastie',
+        data: [1],
+        borderWidth: 1,
+		backgroundColor:['rgba(197, 47, 226, 0.5)'],
+		borderColor:['rgba(101, 27, 116, 1)']
+	  }]
+    },
+	  options:{
+		 scales:{
+			 y:{
+				 title:{
+					 display:true,
+					 text: 'No. of Students'
+				 }
+			 }
+		 }
+	 }
+  });
+</script>	</td>
+      <td><p>There is a clear destinction in demand from students to add Hot Chips to the canteen.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      <p>&nbsp;</p></td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+	  <tr class="content">
+      <td colspan="3" align="center"><h1>Factors behind consumption of canteen food</h1></td>
+    </tr>
+    <tr class="content">
+      <td width="68%"><p align="right">When is comes to what students are looking for when they purchase food, there is a trend towards the following:</p>
+      <p align="right"> -Taste</p>	
+      <p align="right">-Cost</p>
+      <p align="right">-Familiarity</p>
+      <p align="right">Students will prefer to eat food which they know is tasty and cheap.</p></td>
+      <td width="32%" align="center"><div align="center" style="width: 300px; height: 300px">
+  <canvas align="center" id="chart2" height="300px" width="300px" ></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const abc = document.getElementById("chart2"); //goofy
+
+  new Chart(abc, {
+    type: 'pie',
+    data: {
+      labels: ['Taste','Cost','Familiarity','Nutrition','Variety','Sustainability'],
+		
+      datasets: [{
+        label: 'No. of Kids',
+        data: [57,51,22,17,8,7],
+        borderWidth: 1
+      }]
+    },
+  });
+</script>	</td>
+    </tr>
+    <tr class="content">
+      <td>&nbsp;</td>
+      <td class="chart_text">Comparision of what students look for in the canteen</td>
+    </tr>
+  </tbody>
+</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr class="content">
+      <td width="57%">
+		<div style="width: 600px; height: 300px; padding:10px">
+  <canvas id="barchart2" height="300px" width="600px"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const mnm = document.getElementById('barchart2');
+
+  new Chart(mnm, {
+    type: 'bar',
+    data: {
+      labels: ['Reasons for visiting the canteen'],
+      datasets: [{
+        label: 'Hunger',
+        data: [13],
+        borderWidth: 1
+      },{
+		label: 'Bussiness',
+        data: [4],
+        borderWidth: 1
+	  },{
+		label: 'Specials',
+        data: [3],
+        borderWidth: 1
+	  },{
+		label: 'Pricing',
+        data: [3],
+        borderWidth: 1
+	  },{
+		label: 'ID Policy',
+        data: [1],
+        borderWidth: 1
+	  },{
+		label: 'Other',
+        data: [4],
+        borderWidth: 1
+	  }]
+    },
+	  options:{
+		 scales:{
+			 y:{
+				 title:{
+					 display:true,
+					 text: 'No. of Students'
+				 }
+			 }
+		 }
+	 }
+  });
+</script>
+		
+		
+		</td>
+      <td width="43%"><p>The main reason students visit the canteen is hunger, as 18% of students said they fealt this way.</p>
+      <p>Next most common reason that effect wether or not they visit the canteen includes how busy the canteen is, and what specials are on.</p></td>
+    </tr>
+    <tr class="content">
+      <td><p align="right">This students comments on the inconvinent nature of the canteen ID system.</p>
+      <p align="right">This is a common turn off for students with the intention of visiting the canteen.</p></td>
+      <td  align="center"><img src="../Images/student_id_opinion.JPG" width="447" height="186" alt=""/></td>
+    </tr>
+    <tr class="content">
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+	
+</html>

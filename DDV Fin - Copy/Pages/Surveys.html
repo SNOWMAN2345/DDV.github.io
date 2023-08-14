@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+	
+<head>
+	
+
+	
+<meta charset="utf-8">
+<title>Fast Food Analysis</title>
+<link rel="stylesheet" href="../CSS and JS/stylesheet.css">
+<link rel="icon" type="image/x-icon" href="../Images/favicon-32x32.png">
+</head>
+	
+<body class="body">
+<table cellpadding="1" cellspacing="0" class="table">
+  <tbody>
+    <tr>
+      <td class="Tab"><a href="Index.html" class="link">Main Page</a></td>
+      <td class="Tab"><a href="Maccas_Data.html" class="link">McDonalds Data</a></td>
+      <td class="Tab"><a href="Canteen_Data.html" class="link">Canteen Data </a></td>
+      <td class="Selected_Tab">Surveys and Interviews</td>
+      <td class="Tab"><a href="Misc.html" class="link">Miscellaneous</a></td>
+    </tr>
+  </tbody>
+</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="content">
+  <tbody>
+    <tr>
+	<td width="23%">&nbsp;</td>
+      <td width="53%" align="middle"><h1><u>Comments made about the canteen by students</u></h1></td>
+      <td width="24%">&nbsp;</td>
+    </tr>
+    <tr>
+		<td><img src="../Images/kitkat.png" width="262" height="163" alt=""/></td>
+      <td>
+		
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <div class="numbertext">1 / 4</div>
+  <img src="../Images/Canteen_Quotes/quote1.JPG" alt="" width="600px">
+  </div>
+
+  <div class="mySlides1">
+	      <div class="numbertext">2 / 4</div>
+
+      <img src="../Images/Canteen_Quotes/quote2.JPG" alt="" width="600px">
+  </div>
+
+  <div class="mySlides1">
+	      <div class="numbertext">3 / 4</div>
+
+  <img src="../Images/Canteen_Quotes/quote3.JPG" alt="" width="600px">
+  </div>
+	
+  <div class="mySlides1">
+	      <div class="numbertext">4 / 4</div>
+
+  <img src="../Images/Canteen_Quotes/quote4.JPG" alt="" width="600px">
+  </div>
+	
+  <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+</div>		
+	  </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+		<td>&nbsp;</td>
+      <td align="Middle"><h1><u>Comments made about Fast-Food by students</u></h1></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+		<td>&nbsp;</td>
+      <td>
+<div class="slideshow-container">
+  <div class="mySlides2">
+	      <div class="numbertext">1 / 4</div>
+
+<img src="../Images/FF_Quotes/quote1.JPG" alt="" width="600px"> 
+	</div>
+
+  <div class="mySlides2">
+	      <div class="numbertext">2 / 4</div>
+
+<img src="../Images/FF_Quotes/quote2.JPG" alt="" width="600px">
+	</div>
+
+  <div class="mySlides2">
+	      <div class="numbertext">3 / 4</div>
+
+<img src="../Images/FF_Quotes/quote3.JPG" alt="" width="600px">
+	</div>
+<div class="mySlides2">
+	    <div class="numbertext">4 / 4</div>
+
+<img src="../Images/FF_Quotes/quote4.JPG" alt="" width="600px">
+</div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+	  </td>
+      <td><img src="../Images/burger.png" width="293" height="331" alt=""/></td>
+    </tr>
+    <tr>
+		<td>&nbsp;</td>
+      <td align="middle"><h1><u>Comments made by McDonalds managers about Fast-Food</u></h1></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+		<td><img src="../Images/mcdonalds_coffee.png" width="273" height="421" alt=""/></td>
+      <td>
+		  
+<div class="slideshow-container">
+  <div class="mySlides3">
+	  	    <div class="numbertext">1 / 6</div>
+
+<img src="../Images/Manager_Quotes/quote1.JPG" alt="" width="600px"> 
+	</div>
+
+  <div class="mySlides3">
+	  	    <div class="numbertext">2 / 6</div>
+
+<img src="../Images/Manager_Quotes/quote2.JPG" alt="" width="600px">
+	</div>
+
+  <div class="mySlides3">
+	  	  	    <div class="numbertext">3 / 6</div>
+
+<img src="../Images/Manager_Quotes/quote3.JPG" alt="" width="600px">
+	</div>
+<div class="mySlides3">
+		  	    <div class="numbertext">4 / 6</div>
+
+<img src="../Images/Manager_Quotes/quote4.JPG" alt="" width="600px">
+</div>
+<div class="mySlides3">
+		  	    <div class="numbertext">5 / 6</div>
+
+<img src="../Images/Manager_Quotes/quote5.JPG" alt="" width="600px">
+</div>
+<div class="mySlides3">
+		  	    <div class="numbertext">6 / 6</div>
+
+<img src="../Images/Manager_Quotes/quote6.JPG" alt="" width="600px">
+</div>
+
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+</div>
+		
+	  </td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<script>
+let slideIndex = [1,1,1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+	
+
+	
+	<style>
+* {box-sizing: border-box}
+		.mySlides1, .mySlides2 {display:none}
+		.mySlides3 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+.numbertext {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+</style>
+</body>
+	
+	
+	
+</html>

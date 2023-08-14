@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fast Food Analysis</title>
+<link rel="stylesheet" href="../CSS and JS/stylesheet.css">
+<link rel="icon" type="image/x-icon" href="../Images/favicon-32x32.png">
+</head>
+	
+<body class="body">
+<table border="0" cellspacing="0" class="table">
+<tbody>
+    <tr>
+      <td class="Selected_Tab">Main Page</td>
+      <td class="Tab"><a href="Maccas_Data.html" class="link">McDonalds Data</a></td>
+      <td class="Tab"><a href="Canteen_Data.html" class="link">Canteen Data </a></td>
+      <td class="Tab"><a href="Surveys.html" class="link">Surveys and Interviews</a></td>
+      <td class="Tab"><a href="Misc.html" class="link">Miscellaneous</a></td>
+    </tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+<tbody>
+    <tr class="content">
+      <td width="25%" height="273"><img src="../Images/canteen cafe.jpeg" width="100%" height="190" alt=""/></td>
+      <td width="50%" class="heading">A Fast-Food and Canteen Analysis</td>
+      <td width="25%"><img src="../Images/maccas_front.jpeg" width="100%" height="190" alt=""/></td>
+    </tr>
+</tbody>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+    <tr class="content" height="150px">
+      <td width="14%" height="104"></td>
+	  <td width="72%" class="body_text_1"><p>Have you ever wondered what the driving forces were behind why school children are eating Fast-Food and Canteen food?</p>
+      <p>This analysis will be looking into the differant aspects that effect why school kids are consuming Fast-Food and Canteen food.</p></td>
+	  <td width="14%"></td>
+    </tr>
+</tbody>
+</table>
+	
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+<td width="29%" class="content" align="center">
+<div style="width: 300px; height: 300px; padding:10px">
+  <canvas id="myChart" height="300px" width="300px"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['More then once per week','Less then once per week'],
+		
+      datasets: [{
+        label: 'No. of Kids',
+        data: [50,18],
+        borderWidth: 1
+      }]
+    },
+  });
+</script>	
+</td>
+    <td width="25%" class="content" align="left"> <p>We can see about three in four kids are consuming Fast-Food/Canteen Food more then once a week. </p></td>
+	  <td class="content"></td>
+    </tr>
+	  <tr class="content">
+		  <td class="chart_text" align="center">Comparing Kids who are consuming either Fast Food or canteen food to those who consume less then once per week</td>
+		  <td></td>
+		  <td></td>
+	  </tr>
+  </tbody>
+</table>
+	
+
+
+</body>
+	
+</html>

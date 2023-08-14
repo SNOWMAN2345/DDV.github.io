@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+	
+<head>
+<meta charset="utf-8">
+<title>Fast Food Analysis</title>
+<link rel="stylesheet" href="../CSS and JS/stylesheet.css">
+<link rel="icon" type="image/x-icon" href="../Images/favicon-32x32.png">
+</head>
+<body class="body">
+<table cellpadding="1" cellspacing="0" class="table">
+  <tbody>
+    <tr>
+      <td class="Tab"><a href="Index.html" class="link">Main Page</a></td>
+      <td class="Selected_Tab">McDonalds Data</td>
+      <td class="Tab"><a href="Canteen_Data.html" class="link">Canteen Data </a></td>
+      <td class="Tab"><a href="Surveys.html" class="link">Surveys and Interviews</a></td>
+      <td class="Tab"><a href="Misc.html" class="link">Miscellaneous</a></td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr class="content">
+      <td colspan="3" align="center" ><h1>Fast-Food Data</h1></td>
+    </tr>
+    <tr class="content">
+      <td height="358"><img src="../Images/heat_map2.JPG" width="557" height="356" alt=""/><p class="chart_text">Geographic Heat Map of most Popular McDonalds Locations</p></td>
+      <td><p>The most popular McDonalds is the Vermont South location, as it is closest to the Vermont South campus.</p>
+      <p>Next popular is the Knox McDonalds, Followed by Blackburn and Burwood.</p></td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr class="content">
+      <td width="2%">&nbsp;</td>
+      <td width="42%" align="right"><p>Students particularly like KFC and McDonaalds food.</p>
+        Hungry Jacks and Subway come in a close 3rd and 4th respectively.</td>
+      <td width="56%">
+		<div style="width: 600px; height: 300px; padding:10px">
+  <canvas id="barmaccas2" height="300px" width="600px"></canvas>
+</div>
+<p class="chart_text" align="center">Students Favourite Fast-Food Restaurant</p>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const mcd = document.getElementById('barmaccas2'); //dont ask about the goofy veriables 
+
+  new Chart(mcd, {
+    type: 'bar',
+    data: {
+      labels: ['Favourite Fast Food Company'],
+      datasets: [{
+        label: 'KFC',
+        data: [20],
+		backgroundColor:['rgba(89, 191, 239, 0.5)'],
+		borderColor:['rgba(73, 153, 191, 1)'],
+        borderWidth: 1
+      },{
+		label: 'McDonalds',
+        data: [15],
+        borderWidth: 1,
+		backgroundColor:['rgba(254, 255, 74, 0.5)'],
+		borderColor:['rgba(214, 215, 33, 1)']
+	  },{
+		label: 'Hungry Jacks',
+        data: [9],
+        borderWidth: 1,
+		backgroundColor:['rgba(255, 184, 73, 0.5)'],
+		borderColor:['rgba(210, 152, 62, 1)']
+	  },{
+		label: 'Subway',
+        data: [5],
+        borderWidth: 1,
+		backgroundColor:['rgba(149, 240, 35, 0.5)'],
+		borderColor:['rgba(117, 185, 32, 1)']
+	  },{
+		label: 'Guzman y Gomez',
+        data: [4],
+        borderWidth: 1,
+		backgroundColor:['rgba(248, 67, 53, 0.5)'],
+		borderColor:['rgba(181, 53, 44, 1)']
+	  },{
+		
+		label: 'Other',
+        data: [9],
+        borderWidth: 1,
+		backgroundColor:['rgba(197, 47, 226, 0.5)'],
+		borderColor:['rgba(101, 27, 116, 1)']
+	  },]
+    },
+	 options:{
+		 scales:{
+			 y:{
+				 title:{
+					 display:true,
+					 text: 'No. of Students'
+				 }
+			 }
+		 }
+	 }
+  });
+</script>
+		
+	  </td>
+    </tr>
+    <tr class="content">
+      <td>&nbsp;</td>
+      <td>
+		
+		<div style="width: 600px; height: 300px; padding:10px">
+  <canvas id="barmaccas1" height="300px" width="600px"></canvas>
+</div>
+<p class="chart_text">Advertisments which are most memorable to students</p>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const mcs = document.getElementById('barmaccas1');
+
+  new Chart(mcs, {
+    type: 'bar',
+    data: {
+      labels: ['Most ads spotted for a Fast-Food company'],
+      datasets: [{
+        label: 'McDonalds',
+        data: [21],
+        borderWidth: 1,
+		backgroundColor:['rgba(254, 255, 74, 0.5)'],
+		borderColor:['rgba(214, 215, 33, 1)']
+      },{
+		label: 'KFC',
+        data: [16],
+        backgroundColor:['rgba(89, 191, 239, 0.5)'],
+		borderColor:['rgba(73, 153, 191, 1)'],
+        borderWidth: 1
+	  },{
+		label: 'Hungry Jacks',
+        data: [14],
+        borderWidth: 1,
+		backgroundColor:['rgba(255, 184, 73, 0.5)'],
+		borderColor:['rgba(210, 152, 62, 1)']
+	  },{
+		label: 'Dominos',
+        data: [4],
+        borderWidth: 1,
+		backgroundColor:['rgba(52, 237, 208, 0.5)'],
+		borderColor:['rgba(40, 159, 140, 1)']
+	  },{
+		label: 'Guzman y Gomez',
+        data: [4],
+        borderWidth: 1,
+		backgroundColor:['rgba(248, 67, 53, 0.5)'],
+		borderColor:['rgba(181, 53, 44, 1)']
+	  }]
+    },
+	 options:{
+		 scales:{
+			 y:{
+				 title:{
+					 display:true,
+					 text: 'No. of Students'
+				 }
+			 }
+		 }
+	 }
+  });
+</script>
+		
+		
+	</td>
+      <td><p>We can see the majority of students remeber seeing the most advertisments from McDonalds, This may be one of the reasons why McDonalds is particularly popular with students.</p>
+      <p>&nbsp;</p></td>
+    </tr>
+	  <tr class="content">
+      <td align="center" colspan="3"><h1>Factors behind student consumption of Fast-Food</h1></td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+	 <tr class="content">
+	  <td width="1%"></td>
+	  <td width="47%" align="right"><p>The most popular time for McDonalds is at the end of the year, then as the new year starts, sales drop rapidly, before climbing back up at the end of the year</p>
+		 <p>A potential reason for the rapid drop is New Year Resolutions, and people wanting to diet away from McDonalds.</p></td>
+	  <td width="52%">
+		 
+		 <div style="width: 600px; height: 300px; padding:5px">
+  <canvas id="linemaccas1" height="300px" width="600px"></canvas>
+</div>
+<p class="chart_text">2022 Burwood McDonalds Sales Data</p>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const bvb = document.getElementById('linemaccas1');
+
+  new Chart(bvb, {
+    type: 'line',
+    data: {
+      labels: ['January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'],
+      datasets: [{
+		label: 'Monthly Sales',
+    data: [588686.75, 556946.37, 646633.29, 649961.32, 659364.91, 657012, 693767.00, 675987.56, 697356.00, 665662.34, 660031, 679024],
+    fill: false,
+    borderColor: 'rgb(232, 40, 40)',
+    tension: 0.1
+		
+		
+	}]
+    },
+	 options:{
+		 scales:{
+			 y:{
+				 title:{
+					 display:true,
+					 text: 'Sales ($AUD)'
+				 }
+			 }
+		 }
+	 }
+  });
+</script>
+		 
+		 
+		 </td>
+	  </tr>
+    
+  </tbody>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr class="content">
+      <td width="1%">&nbsp;</td>
+      <td width="62%" align="right"><p>9% of students say they have a family tradition which involves the consumption of fast food.</p>
+      <p>Common traditions include: Eating out on fridays, Birthdays and Special Celebrations</p></td>
+      <td width="37%" align="center"><img src="../Images/fam_trad_2.JPG" width="410" height="193" alt=""/></td>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr class="content">
+      <td width="48%" align="right"><p>Having a time constraint is the main reason students are consuming fast food.</p>
+      <p>Additionally, factors such as mood and weather also influence consumption of fast food</p></td>
+      <td width="52%">
+		<div style="width: 600px; height: 300px; padding:10px">
+  <canvas id="barmaccas3" height="300px" width="600px"></canvas>
+</div>
+<p class="chart_text">Factors and Reasons students are consuming Fast-Food</p>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const bmc = document.getElementById('barmaccas3');
+
+  new Chart(bmc, {
+    type: 'bar',
+    data: {
+      labels: ['Reason for Eating Fast-Food'],
+      datasets: [{
+        label: 'Time Constraint',
+        data: [8],
+        borderWidth: 1,
+		backgroundColor:['rgba(254, 255, 74, 0.5)'],
+		borderColor:['rgba(214, 215, 33, 1)']
+      },{
+		label: 'Poor Weather',
+        data: [4],
+        borderWidth: 1,
+        backgroundColor:['rgba(89, 191, 239, 0.5)'],
+		borderColor:['rgba(73, 153, 191, 1)']
+	  },{
+		label: 'Bad Mood',
+        data: [3],
+        borderWidth: 1,
+		backgroundColor:['rgba(255, 184, 73, 0.5)'],
+		borderColor:['rgba(210, 152, 62, 1)']
+	  },{
+		label: 'Family Tradition',
+        data: [3],
+        borderWidth: 1,
+		backgroundColor:['rgba(149, 240, 35, 0.5)'],
+		borderColor:['rgba(117, 185, 32, 1)']
+	  },{
+		label: 'After Work',
+        data: [2],
+        borderWidth: 1,
+		backgroundColor:['rgba(245, 19, 14, 0.5)'],
+		borderColor:['rgba(168, 16, 14, 0.1)']
+	  },{
+		label: 'Hungry',
+        data: [2],
+        borderWidth: 1,
+		backgroundColor:['rgba(23, 26, 239, 0.5)'],
+		borderColor:['rgba(17, 19, 146, 1)']
+	  },{
+		label: 'Other',
+        data: [5],
+        borderWidth: 1,
+		backgroundColor:['rgba(197, 47, 226, 0.5)'],
+		borderColor:['rgba(101, 27, 116, 1)']
+		  
+	  }]
+    },
+	 options:{
+		 scales:{
+			 y:{
+				 title:{
+					 display:true,
+					 text: 'No. of Students'
+				 }
+			 }
+		 }
+	 }
+  });
+</script>
+		
+		
+		
+		
+		</td>
+    </tr>
+    <tr class="content">
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+
+</body>
+	
+</html>
